@@ -26,35 +26,57 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      {pathname !== "/potrait" ? (
+        {pathname !== "/potrait" ? (
           pathname !== "/galery" &&
           pathname !== "/request" &&
           pathname !== "/login" &&
           pathname !== "/register" &&
           pathname !== "/" &&
-          <NavbarLogin/>
+          pathname !== "/kota" && 
+          pathname !== "/box" &&
+          pathname !== "/jumlah" &&
+          pathname !== "/cabang" &&
+          <NavbarLogin />
         ) : (
           <></>
         )}
         {pathname !== "/" &&
         pathname !== "/potrait" &&
         pathname !== "/galery" ? (
-          pathname !== "/login" && pathname !== "/register" &&
-          pathname !== "/sukseslogin" &&
+          pathname !== "/login" &&
+          pathname !== "/register" &&
+          pathname !== "/sukseslogin" && 
+          pathname !== "/box" &&
+          pathname !== "/jumlah" &&
+          pathname !== "/cabang" &&
           <Header />
         ) : (
           <></>
         )}
         {pathname !== "/potrait" && pathname !== "/galery" ? (
-          pathname !== "/request" && pathname !== "/login" && pathname !== "/register" &&
-          pathname !== "/sukseslogin" && <Navbar />
+          pathname !== "/request" &&
+          pathname !== "/login" &&
+          pathname !== "/register" &&
+          pathname !== "/sukseslogin" &&
+          pathname !== "/kota" && 
+          pathname !== "/box" &&
+          pathname !== "/jumlah" &&
+          pathname !== "/cabang" &&
+          <Navbar />
         ) : (
           <></>
         )}
-        {children}
+        <div className="bg-white">{children}</div>
+
         {pathname !== "/potrait" && pathname !== "/galery" ? (
-          pathname !== "/request" && pathname !== "/login" && pathname !== "/register" &&
-           <Popular />
+          pathname !== "/request" &&
+          pathname !== "/login" &&
+          pathname !== "/register" &&
+          pathname !== "/kota" && 
+          pathname !== "/box" &&
+          pathname !== "/jumlah" &&
+          pathname !== "/cabang" &&
+          <Popular />
         ) : (
           <></>
         )}
@@ -64,14 +86,16 @@ export default function RootLayout({
           pathname !== "/request" &&
           pathname !== "/login" &&
           pathname !== "/register" &&
+          pathname !== "/kota" && 
+          pathname !== "/box" &&
+          pathname !== "/jumlah" &&
+          pathname !== "/cabang" &&
           <Locations />
         ) : (
           <></>
         )}
 
-        {pathname !== "/login" &&
-        pathname !== "/register"&&
-        <Footer />}
+        {pathname !== "/login" && pathname !== "/register" && <Footer />}
       </body>
     </html>
   );

@@ -94,47 +94,49 @@ export default function Potrait() {
             </Link>
           </div>
           <div>
-            <button className=" mx-auto mt-16 text-white bg-purple-600 border-0 py-2 px-8 focus:outline-none hover:bg-purple-700 rounded-full text-lg">
-              Pesan Online
-            </button>
+            <Link href={"/kota"}>
+              <button className=" mx-auto mt-16 text-white bg-purple-600 border-0 py-2 px-8 focus:outline-none hover:bg-purple-700 rounded-full text-lg">
+                Pesan Online
+              </button>
+            </Link>
           </div>
         </div>
       </div>
       <div>
-      <div className="p-8 flex justify-evenly">
-        <div>
-          <Image width={300} height={300} src="/img/couplelg.png" alt="" />
+        <div className="p-8 flex justify-evenly">
+          <div>
+            <Image width={300} height={300} src="/img/couplelg.png" alt="" />
+          </div>
+          <div>
+            <Image width={300} height={300} src="/img/familylg.png" alt="" />
+          </div>
+          <div>
+            <Image width={300} height={300} src="/img/siswa.png" alt="" />
+          </div>
         </div>
-        <div>
-          <Image width={300} height={300} src="/img/familylg.png" alt="" />
+        <div className="p-8 flex justify-evenly">
+          <div>
+            <Image width={300} height={300} src="/img/wakwaw.png" alt="" />
+          </div>
+          <div>
+            <Image width={300} height={300} src="/img/2.png" alt="" />
+          </div>
+          <div>
+            <Image width={300} height={300} src="/img/biglg.png" alt="" />
+          </div>
         </div>
-        <div>
-        <Image width={300} height={300} src="/img/siswa.png" alt="" />
+        <div className="p-8 flex justify-evenly">
+          <div>
+            <Image width={300} height={300} src="/img/selfi.png" alt="" />
+          </div>
+          <div>
+            <Image width={300} height={300} src="/img/wle.png" alt="" />
+          </div>
+          <div>
+            <Image width={300} height={300} src="/img/4boxlg.png" alt="" />
+          </div>
         </div>
       </div>
-      <div className="p-8 flex justify-evenly">
-        <div>
-          <Image width={300} height={300} src="/img/wakwaw.png" alt="" />
-        </div>
-        <div>
-          <Image width={300} height={300} src="/img/2.png" alt="" />
-        </div>
-        <div>
-        <Image width={300} height={300} src="/img/biglg.png" alt="" />
-        </div>
-      </div>
-      <div className="p-8 flex justify-evenly">
-        <div>
-          <Image width={300} height={300} src="/img/selfi.png" alt="" />
-        </div>
-        <div>
-          <Image width={300} height={300} src="/img/wle.png" alt="" />
-        </div>
-        <div>
-        <Image width={300} height={300} src="/img/4boxlg.png" alt="" />
-        </div>
-      </div>
-    </div>
     </section>
   );
 }
