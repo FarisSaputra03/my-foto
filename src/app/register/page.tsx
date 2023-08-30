@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Register() {
   return (
-    <section className="bg-gradient-to-b from-primary to-secondary relative">
+    <section className="bg-gradient-to-b from-ungu to-secondary relative">
       <div className="p-10 pt-10">
         <Link href={"/"}>
           <svg

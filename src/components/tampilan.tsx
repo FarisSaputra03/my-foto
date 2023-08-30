@@ -9,7 +9,7 @@ export default function Tampilan() {
       </div>
       <div className="flex justify-center ">
         <Link href={"/potrait"}>
-          <button className="flex mx-auto mt-96 text-white bg-purple-800 border-0 italic py-2 px-8 focus:outline-none rounded-full text-lg">
+          <button className="flex mx-auto mt-96 text-white bg-ungu border-0 italic py-2 px-8 focus:outline-none rounded-full text-lg">
             Booking Now
           </button>
         </Link>

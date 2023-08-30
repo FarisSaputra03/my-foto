@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Header() {
   return (
-    <header className="text-gray-600 bg-purple-900 body-font">
+    <header className="text-gray-600 bg-ungu body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <Image width={347.66} height={40} src="/img/logo.png" alt="" />

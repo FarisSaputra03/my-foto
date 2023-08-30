@@ -34,12 +34,12 @@ export default function Navbar() {
           <a className="mr-5 text-white">Request</a>
           <div className="grid gap-4 grid-cols-2">
             <Link href={"/login"}>
-              <button className="inline-flex text-white border-2 border-yellow-300 py-1 px-4 focus:outline-none rounded">
+              <button className="inline-flex text-white border-2 border-tertiary py-1 px-4 focus:outline-none rounded">
                 <p className="text-yellow-300">Masuk</p>
               </button>
             </Link>
             <Link href={"/register"}>
-              <button className="inline-flex text-white border-2 border-yellow-300 py-1 px-4 focus:outline-none rounded">
+              <button className="inline-flex text-white border-2 border-tertiary py-1 px-4 focus:outline-none rounded">
                 <p className="text-yellow-300">Daftar</p>
               </button>
             </Link>

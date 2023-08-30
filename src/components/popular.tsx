@@ -74,7 +74,7 @@ export default function Popular() {
                       <p>{data.price}</p>
                     </div>
                     <div className="w-auto flex justify-center pt-5">
-                      <button className=" flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none rounded-lg text-xs">
+                      <button className=" flex text-white bg-ungu border-0 py-2 px-6 focus:outline-none rounded-lg text-xs">
                         Ayok Buruan Daftar !
                       </button>
                     </div>

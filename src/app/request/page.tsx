@@ -21,7 +21,7 @@ export default function Request() {
         </button>
         </Link>
         <div className="flex justify-center">
-          <button className="inline-flex text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-900 rounded-lg text-lg">
+          <button className="inline-flex text-white bg-ungu border-0 py-2 px-6 focus:outline-none hover:bg-purple-900 rounded-lg text-lg">
             Sampaikan Kebutuhan Hokkiers
           </button>
         </div>

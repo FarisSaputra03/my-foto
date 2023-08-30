@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className=" bg-purple-900 body-font">
+    <footer className=" bg-ungu body-font">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <Image width={278} height={32} src="/img/logo.png" alt="" />
         <span className="flex w-auto  sm:ml-auto">

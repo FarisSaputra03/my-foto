@@ -4,7 +4,7 @@ import Link from "next/link";
 // from-[#732C80] to-[#FF9C99]
 export default function Login() {
   return (
-    <section className="bg-gradient-to-b from-primary to-secondary relative">
+    <section className="bg-gradient-to-b from-ungu to-secondary relative">
       <div className="p-10 pt-10">
         <Link href={"/"}>
           <svg
