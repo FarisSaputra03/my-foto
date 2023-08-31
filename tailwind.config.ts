@@ -12,7 +12,7 @@ const config: Config = {
   theme: {
     colors: {
       ungu: "#732C80",
-      secondary: "#FF9C99",
+      dary: "#FF9C99",
       tertiary: "#FDE356 ",
       kuning:"#FDE356",
     },

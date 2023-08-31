@@ -4,7 +4,7 @@ import Link from "next/link";
 // from-[#732C80] to-[#FF9C99]
 export default function Login() {
   return (
-    <section className="bg-gradient-to-b from-ungu to-secondary relative">
+    <section className="bg-gradient-to-b from-ungu to-dary relative">
       <div className="p-10 pt-10">
         <Link href={"/"}>
           <svg
@@ -22,14 +22,14 @@ export default function Login() {
         </Link>
       </div>
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex justify-center gap-16 text-center w-full mb-12">
-          <div>
+        <div className="flex justify-center gap-5 text-center w-full mb-12">
+          <div className="mt-1">
             <Image width={500} height={81} src="/img/logo.png" alt="" />
           </div>
           <div>
             <svg
               width="4"
-              height="50"
+              height="55"
               viewBox="0 0 4 100"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ export default function Login() {
           </h1>
         </div>
         <div className="lg:w-1/2 md:w-2  mx-auto">
-          <div className="flex flex-col pt-10 space-y-1">
+          <div className="flex flex-col pt-5 space-y-1">
             <div className="p-2 w-full">
               <div className="relative">
                 <label className="leading-7 text-sm text-gray-600"></label>

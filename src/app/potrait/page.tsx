@@ -88,14 +88,14 @@ export default function Potrait() {
         <div className="flex gap-16 justify-center">
           <div>
             <Link href={"/galery"}>
-              <button className=" mx-auto mt-16 text-purple-600 bg-white border-2 border-purple-700 py-2 px-8 focus:outline-none rounded-full text-lg">
+              <button className=" mx-auto mt-16 text-ungu bg-white border-2 border-ungu py-2 px-8 focus:outline-none rounded-full text-lg">
                 Lihat Galeri Photo
               </button>
             </Link>
           </div>
           <div>
             <Link href={"/kota"}>
-              <button className=" mx-auto mt-16 text-white bg-purple-600 border-0 py-2 px-8 focus:outline-none hover:bg-purple-700 rounded-full text-lg">
+              <button className=" mx-auto mt-16 text-white bg-ungu border-0 py-2 px-8 focus:outline-none hover:bg-purple-900 rounded-full text-lg">
                 Pesan Online
               </button>
             </Link>

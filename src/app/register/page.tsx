@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Register() {
   return (
-    <section className="bg-gradient-to-b from-ungu to-secondary relative">
+    <section className="bg-gradient-to-b from-ungu to-dary relative">
       <div className="p-10 pt-10">
         <Link href={"/"}>
           <svg
@@ -21,7 +21,7 @@ export default function Register() {
         </Link>
       </div>
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex justify-center gap-16 text-center w-full mb-12">
+        <div className="flex justify-center gap-5 text-center w-full mb-12">
           <div>
             <Image width={500} height={81} src="/img/logo.png" alt="" />
           </div>
@@ -41,7 +41,7 @@ export default function Register() {
           </h1>
         </div>
         <div className="lg:w-1/2 md:w-2  mx-auto">
-          <div className="flex flex-col pt-10 space-y-1">
+          <div className="flex flex-col pt-5 space-y-1">
             <div className="p-2 w-full">
               <div className="relative">
                 <label className="leading-7 text-sm text-gray-600"></label>
