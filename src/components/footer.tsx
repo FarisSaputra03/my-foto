@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="bg-ungu body-font w-auto flex justify-between">
       <div className="flex flex-col space-y-4 mt-6 ml-11">
-        <Image width={278} height={32} src="/img/logo.png" alt="" />
+        <Image width={200} height={30} src="/img/logo.png" alt="" />
         <div className="container gap-5 px-1 py-0 mx-auto flex items-center sm:flex-row">
           <div className="flex">
             <svg
@@ -42,16 +42,16 @@ export default function Footer() {
       <div className=" mt-6 ml-11 mr-10">
         <div className="grid grid-cols-2 gap-4 place-content-end">
           <div>
-            <p className="text-white gap-1 ">Keluhan</p>
+            <p className="text-white text-sm px-8 ">Keluhan</p>
           </div>
           <div>
-            <p className="text-white gap-1 ">Saran</p>
+            <p className="text-white text-sm px-8 ">Saran</p>
           </div>
           <div>
-            <p className="text-white gap-1 ">Kerjasama</p>
+            <p className="text-white text-sm px-8 ">Kerjasama</p>
           </div>
           <div>
-            <p className="text-white gap-1">Privacy & Policy</p>
+            <p className="text-white text-sm px-8">Privacy & Policy</p>
           </div>
         </div>
       </div>
