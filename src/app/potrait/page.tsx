@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Potrait() {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font bg-white">
       <div className="p-8">
         <Link href={"/"}>
           <button>
@@ -25,7 +25,7 @@ export default function Potrait() {
       <div className="flex justify-center">
         <h1 className="font-bold text-black text-6xl">Portrait 4</h1>
       </div>
-      <div className="container flex flex-col space-y-10  px-5 py-20 mx-auto">
+      <div className="container flex flex-col space-y-10 bg-white  px-5 py-20 mx-auto">
         <div className="border-2 group-hover:scale-110 rounded-lg flex items-center border-opacity-60 lg:w-3/5 mx-auto">
           <div className="h-64 relative w-96">
             <Image
@@ -85,17 +85,17 @@ export default function Potrait() {
             </p>
           </div>
         </div>
-        <div className="flex gap-16 justify-center">
+        <div className="flex gap-10 justify-center">
           <div>
             <Link href={"/galery"}>
-              <button className=" mx-auto mt-16 text-ungu bg-white border-2 border-ungu py-2 px-8 focus:outline-none rounded-full text-lg">
+              <button className="mt-10 w-auto text-ungu bg-white border-2 border-ungu py-2 px-5 rounded-full text-sm">
                 Lihat Galeri Photo
               </button>
             </Link>
           </div>
           <div>
             <Link href={"/kota"}>
-              <button className=" mx-auto mt-16 text-white bg-ungu border-0 py-2 px-8 focus:outline-none hover:bg-purple-900 rounded-full text-lg">
+              <button className="mt-10 w-auto text-white bg-ungu border-2 py-2 px-5 hover:bg-purple-900 rounded-full text-sm">
                 Pesan Online
               </button>
             </Link>

@@ -179,7 +179,7 @@ export default function Kota() {
       </div>
       {selectedCity == null ? (
         <div className="container px-5 py-24 mx-auto">
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4">
             {listKota.map((data: any, index) => (
               <div
                 onClick={() => {
@@ -204,23 +204,23 @@ export default function Kota() {
         </div>
       ) : null}
       {selectedCity !== null && selectedView == null ? (
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="grid lg:grid-cols-4">
+        <div className="px-5 py-10 w-full">
+          <div className="container flex justify-start">
+            <div className="grid grid-cols-2  lg:grid-cols-5">
               {listView.map((data: any, index) => (
                 <div
                   onClick={() => {
                     setSelectedView(data);
                   }}
                   key={index + 1}
-                  className="p-12"
+                  className="p-5"
                 >
-                  <div className="h-auto w-56 border-2 group-hover:scale-110  card hover:shadow border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <div className="h-48 rounded w-full object-cover relative object-center mb-6">
+                  <div className="h-auto w-full border-2 group-hover:scale-110  card hover:shadow border-gray-200 border-opacity-60 rounded-lg">
+                    <div className="h-48 rounded w-full object-cover relative object-center mb-1">
                       <Image fill src={data.img} alt="" />
                     </div>
                     <div className="p-5 pb-5">
-                      <h2 className="text-lg text-gray-900 font-bold title-font">
+                      <h2 className="text-sm text-gray-900 font-bold title-font">
                         {data.title}
                       </h2>
                       <div className="flex text-gray-500 gap-5">
@@ -235,18 +235,18 @@ export default function Kota() {
         </div>
       ) : null}
       {selectedView !== null && selectedBox == null ? (
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="grid lg:grid-cols-4">
+        <div className="px-5 py-10">
+          <div className="container flex justify-start">
+            <div className="grid grid-cols-2 lg:grid-cols-5">
               {listBox.map((data: any, index) => (
                 <div
                   onClick={() => {
                     setSelectedBox(data);
                   }}
                   key={index + 1}
-                  className="p-12"
+                  className="p-5"
                 >
-                  <div className="h-auto w-56 border-2 group-hover:scale-110  card hover:shadow border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                  <div className="h-auto w-full border-2 group-hover:scale-110  card hover:shadow border-gray-200 border-opacity-60 rounded-lg">
                     <div className="h-48 rounded w-full object-cover relative object-center mb-6">
                       <Image fill src={data.img} alt="" />
                     </div>

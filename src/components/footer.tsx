@@ -2,11 +2,23 @@ import React from "react";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className="bg-ungu body-font w-auto flex justify-between">
-      <div className="flex flex-col space-y-4 mt-6 ml-11">
-        <Image width={200} height={30} src="/img/logo.png" alt="" />
-        <div className="container gap-5 px-1 py-0 mx-auto flex items-center sm:flex-row">
-          <div className="flex">
+    <div className="bg-ungu body-font flex justify-between w-auto">
+      <div className="flex flex-col space-y-4 ml-5">
+        <div className="mt-2">
+          <Image width={278} height={32} src="/img/logo.png" alt="" />
+        </div> 
+        <div className="block md:hidden">
+          <div className="flex gap-10 py-1">
+            <p className="text-white  text-sm ">Keluhan</p>
+            <p className="text-white  text-sm ">Saran</p>
+          </div>
+          <div className="flex gap-6 py-1">
+            <p className="text-white  text-sm ">Kerjasama</p>
+            <p className="text-white text-sm ">Privacy & Policy</p>
+          </div>
+        </div>
+        <div className="flex">
+          <div>
             <svg
               width="36"
               height="36"
@@ -35,11 +47,11 @@ export default function Footer() {
             </svg>
           </div>
         </div>
-        <div className="container px-1 py-0 mx-auto flex items-center sm:flex-row flex-col">
+        <div className="flex justify-start">
           <p className="text-white">© 2023 Fotohokkie</p>
         </div>
       </div>
-      <div className=" mt-6 ml-11 mr-10">
+      <div className="hidden md:block mt-6 ml-11 mr-10">
         <div className="grid grid-cols-2 gap-4 place-content-end">
           <div>
             <p className="text-white text-sm px-8 ">Keluhan</p>
@@ -54,7 +66,7 @@ export default function Footer() {
             <p className="text-white text-sm px-8">Privacy & Policy</p>
           </div>
         </div>
-      </div>
+        </div>
     </div>
   );
 }
