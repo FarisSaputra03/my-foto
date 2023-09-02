@@ -14,7 +14,8 @@ const config: Config = {
       ungu: "#732C80",
       dary: "#FF9C99",
       tertiary: "#FDE356 ",
-      kuning:"#FDE356",
+      kuning: "#FDE356",
+      merah: "#FF0000",
     },
     extend: {
       backgroundImage: {
@@ -25,7 +26,7 @@ const config: Config = {
     },
   },
 
-  plugins: [require("flowbite/plugin"),require("daisyui")],
+  plugins: [require("flowbite/plugin"), require("daisyui")],
   daisyui: {
     themes: false,
   },

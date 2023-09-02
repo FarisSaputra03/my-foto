@@ -29,7 +29,7 @@ export default function Kota() {
     },
     {
       img: "/img/4boxlg.png",
-      title: "4R - Bobokkie",
+      title: "BOX 4 White",
       info: "Classic",
     },
     {
@@ -236,8 +236,8 @@ export default function Kota() {
       ) : null}
       {selectedView !== null && selectedBox == null ? (
         <div className="px-5 py-10">
-          <div className="container flex justify-start">
-            <div className="grid grid-cols-2 lg:grid-cols-5">
+          <div className="container flex justify-center">
+            <div className="grid grid-cols-2 lg:grid-cols-4">
               {listBox.map((data: any, index) => (
                 <div
                   onClick={() => {
@@ -296,7 +296,7 @@ export default function Kota() {
                       <AiFillMinusCircle size={40} />
                     </div>
                   </div>
-                  <div className="rounded-full focus:outline-none bg-ungu py-2 px-5">
+                  <div className="rounded-full bg-ungu p-3">
                     <div className="flex gap-10">
                       <p className="text-white text-sm">{jumlahOrang} Orang</p>
                       <p className="text-white text-sm">
@@ -315,11 +315,11 @@ export default function Kota() {
                   </div>
                 </div>
                 <div className="w-full">
-                  <p className="text-red-600 text-sm">
+                  <p className="text-merah text-sm">
                     * UMUR 4 tahun kebawah tidak perlu di hitung (tidak dapat
                     cetakan)
                   </p>
-                  <p className="text-red-600 text-sm">
+                  <p className="text-merah text-sm">
                     ** Jika tetap ingin dapat cetakan, maka anak juga harus
                     bayar
                   </p>
@@ -530,7 +530,7 @@ export default function Kota() {
               </button>
             </div>
             <div className="flex">
-              <p className="text-red-500 flex text-sm">
+              <p className="text-merah flex text-sm">
                 * Waktu booking tidak dapat melebihi 7 hari
               </p>
             </div>
