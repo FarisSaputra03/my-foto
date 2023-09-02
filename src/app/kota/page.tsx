@@ -281,7 +281,7 @@ export default function Kota() {
             <div className="mx-auto flex flex-wrap">
               <Image width={400} height={400} src="/img/siswalg.png" alt="" />
               <div className="lg:w-1/2 w-full lg:pl-40 lg:py-6">
-                <h1 className="text-black w-full text-2xl title-font font-normal mb-1">
+                <h1 className="text-black flex justify-center w-full text-xl title-font mb-1">
                   Jumlah hookiers yang akan di foto :
                 </h1>
                 <div className="flex w-full p-5 gap-3 justify-center">
@@ -298,8 +298,8 @@ export default function Kota() {
                   </div>
                   <div className="rounded-full focus:outline-none bg-ungu py-2 px-5">
                     <div className="flex gap-10">
-                      <p className="text-white">{jumlahOrang} Orang</p>
-                      <p className="text-white">IDR {jumlahOrang * 20000} </p>
+                      <p className="text-white text-sm">{jumlahOrang} Orang</p>
+                      <p className="text-white text-sm">IDR {jumlahOrang * 20000} </p>
                     </div>
                   </div>
                   <div
@@ -553,7 +553,7 @@ export default function Kota() {
         <div>
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div className="mb-10">
-              <Image width={720} height={600} src="/img/wakwaw.png" alt="" />
+              <Image width={620} height={600} src="/img/wakwaw.png" alt="" />
             </div>
             <div className="bg-ungu rounded-lg py-2 mb-20 p-2 md:w-1/2">
               <div className="flex justify-center">

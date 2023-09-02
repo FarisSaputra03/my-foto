@@ -27,7 +27,7 @@ export default function Potrait() {
       </div>
       <div className="container flex flex-col space-y-10 bg-white  px-5 py-20 mx-auto">
         <div className="border-2 group-hover:scale-110 rounded-lg flex items-center border-opacity-60 lg:w-3/5 mx-auto">
-          <div className="h-64 relative w-96">
+          <div className="h-64 relative w-60">
             <Image
               fill
               src="/img/family.png"
@@ -36,10 +36,10 @@ export default function Potrait() {
             />
           </div>
           <div className="flex-grow ml-5 sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-black text-lg title-font font-bold mb-2">
+            <h2 className="text-black text-sm title-font font-bold mb-2">
               Portrait 4
             </h2>
-            <p className="leading-relaxed text-base">
+            <p className="leading-relaxed text-sm">
               adalah Photobox adalah foto yang diambil oleh diri sendiri, bukan
               oleh orang lain. Ini adalah studio mandiri asli untuk aku yang
               sebenarnya.
@@ -48,15 +48,15 @@ export default function Potrait() {
         </div>
         <div className="border-2 group-hover:scale-110 rounded-lg flex items-center border-opacity-60 lg:w-3/5 mx-auto">
           <div className="flex-grow ml-5 sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-black text-lg title-font font-bold mb-2">
+            <h2 className="text-black text-sm title-font font-bold mb-2">
               Portrait 4
             </h2>
-            <p className="leading-relaxed text-base">
+            <p className="leading-relaxed text-sm">
               adalah layanan foto yang mengutamakan expresi muka karena mode
               fotonya medium shoot
             </p>
           </div>
-          <div className="h-64 relative w-96">
+          <div className="h-64 relative w-60">
             <Image
               fill
               src="/img/4box.png"
@@ -66,7 +66,7 @@ export default function Potrait() {
           </div>
         </div>
         <div className="border-2 group-hover:scale-110 rounded-lg flex items-center border-opacity-60 lg:w-3/5 mx-auto">
-          <div className="h-64 relative w-64">
+          <div className="h-64 relative w-60">
             <Image
               fill
               src="/img/couple.png"
@@ -75,12 +75,12 @@ export default function Potrait() {
             />
           </div>
           <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 className="text-black text-lg title-font font-bold mb-2">
+            <h2 className="text-black text-sm title-font font-bold mb-2">
               Menawarkan :
             </h2>
-            <p className="leading-relaxed text-base">- Maksimal 3 Orang</p>
-            <p className="leading-relaxed text-base">- Cetakan SQUARE</p>
-            <p className="leading-relaxed text-base">
+            <p className="leading-relaxed text-sm">- Maksimal 3 Orang</p>
+            <p className="leading-relaxed text-sm">- Cetakan SQUARE</p>
+            <p className="leading-relaxed text-sm">
               - Ukuran Cetakan 4 foto dalam 1 cetakan 4R
             </p>
           </div>
