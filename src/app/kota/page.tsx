@@ -186,14 +186,14 @@ export default function Kota() {
                   setSelectedCity(data);
                 }}
                 key={index + 1}
-                className="flex flex-wrap -m-4"
+                className="flex flex-wrap"
               >
-                <div className=" p-4 gap-10 w-64">
+                <div className="p-4 gap-10 w-64">
                   <div className="h-48 rounded w-full object-cover relative object-center mb-6">
                     <Image fill src={data.img} alt="" />
                   </div>
-                  <div className="flex justify-center mt-4">
-                    <h2 className="text-gray-900 title-font text-lg font-medium">
+                  <div className="flex justify-center mt-1">
+                    <h2 className="title-font text-lg font-bold text-ungu">
                       {data.title}
                     </h2>
                   </div>
@@ -247,7 +247,7 @@ export default function Kota() {
                   className="p-5"
                 >
                   <div className="h-auto w-full border-2 group-hover:scale-110  card hover:shadow border-gray-200 border-opacity-60 rounded-lg">
-                    <div className="h-48 rounded w-full object-cover relative object-center mb-6">
+                    <div className="h-48 rounded w-full object-cover relative object-center mb-1">
                       <Image fill src={data.img} alt="" />
                     </div>
                     <div className="p-5 pb-5">
@@ -299,7 +299,9 @@ export default function Kota() {
                   <div className="rounded-full focus:outline-none bg-ungu py-2 px-5">
                     <div className="flex gap-10">
                       <p className="text-white text-sm">{jumlahOrang} Orang</p>
-                      <p className="text-white text-sm">IDR {jumlahOrang * 20000} </p>
+                      <p className="text-white text-sm">
+                        IDR {jumlahOrang * 20000}{" "}
+                      </p>
                     </div>
                   </div>
                   <div
@@ -327,7 +329,7 @@ export default function Kota() {
                     onClick={() => {
                       setNextReservation(true);
                     }}
-                    className="flex mx-auto mt-10 text-white bg-ungu border-0 py-2 px-8 focus:outline-none hover:bg-ungu rounded-full text-lg"
+                    className="flex mx-auto mt-5 text-white bg-ungu border-0 py-2 px-8 focus:outline-none hover:bg-ungu rounded-full text-lg"
                   >
                     Lanjutkan
                   </button>
@@ -338,211 +340,220 @@ export default function Kota() {
         </section>
       ) : null}
       {nextReservation == true && selectResume == false ? (
-        <div>
-          <div className="flex p-5 justify-center mt-10">
-            <div className="flex justify-between gap-36 w-auto rounded-lg bg-ungu">
-              <div className="py-3 p-5">
-                <svg
-                  width="21"
-                  height="29"
-                  viewBox="0 0 21 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.5 2L3 14.5L19.5 27"
-                    stroke="#F8F7F3"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <h1 className="text-white flex py-2 px-8 text-3xl">September</h1>
-              <div className="py-3 p-5">
-                <svg
-                  width="21"
-                  height="29"
-                  viewBox="0 0 21 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 27L18.5 14.5L2 2"
-                    stroke="#F8F7F3"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div className="flex p-5 justify-center">
-            <div className="flex justify-between py-4 p-5 w-auto gap-5 rounded-lg bg-ungu">
-              <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
-                <div className="flex justify-center">
-                  <h1 className="font-bold text-black">3</h1>
+        <div className="flex justify-center">
+          <div className="w-full md:w-1/2">
+            <div className="flex p-5 justify-center mt-5">
+              <div className="flex justify-between w-full  rounded-lg bg-ungu">
+                <div className="py-3 p-3">
+                  <svg
+                    width="21"
+                    height="29"
+                    viewBox="0 0 21 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.5 2L3 14.5L19.5 27"
+                      stroke="#F8F7F3"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
                 </div>
-                <div className="flex justify-center">
-                  <p className="text-black">Rabu</p>
-                </div>
-              </div>
-              <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
-                <div className="flex justify-center">
-                  <h1 className="font-bold text-black">4</h1>
-                </div>
-                <div className="flex justify-center">
-                  <p className="text-black">Kamis</p>
-                </div>
-              </div>
-              <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
-                <div className="flex justify-center">
-                  <h1 className="font-bold text-black">5</h1>
-                </div>
-                <div className="flex justify-center">
-                  <p className="text-black">Jumat</p>
-                </div>
-              </div>
-              <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
-                <div className="flex justify-center">
-                  <h1 className="font-bold text-black">6</h1>
-                </div>
-                <div className="flex justify-center">
-                  <p className="text-black">Sabtu</p>
-                </div>
-              </div>
-              <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
-                <div className="flex justify-center">
-                  <h1 className="font-bold text-black">7</h1>
-                </div>
-                <div className="flex justify-center">
-                  <p className="text-black">Minggu</p>
-                </div>
-              </div>
-              <div className="rounded-lg py-2 p-2 bg-kuning flex flex-col">
-                <div className="flex justify-center">
-                  <h1 className="font-bold text-black">8</h1>
-                </div>
-                <div className="flex justify-center">
-                  <p className="text-black">Senin</p>
-                </div>
-              </div>
-              <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
-                <div className="flex justify-center">
-                  <h1 className="font-bold text-black">9</h1>
-                </div>
-                <div className="flex justify-center">
-                  <p className="text-black">Selasa</p>
+                <h1 className="text-white flex py-2 text-3xl">September</h1>
+                <div className="py-3 p-3">
+                  <svg
+                    width="21"
+                    height="29"
+                    viewBox="0 0 21 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 27L18.5 14.5L2 2"
+                      stroke="#F8F7F3"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex p-1 justify-center">
-            <div className="flex  justify-between py-4 p-4 w-[600px] gap-5 rounded-lg bg-ungu">
-              <div className="pl-9 grid grid-cols-1 md:grid-cols-6 gap-5">
-                <div className="rounded-full py-1 p-2 bg-gray-700">
-                  <h1 className="text-white py-1 p-1">10:00</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-gray-700">
-                  <h1 className="text-white py-1 p-1">10:10</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-gray-700">
-                  <h1 className="text-white py-1 p-1">10:20</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-gray-700">
-                  <h1 className="text-white py-1 p-1">10:30</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-gray-700">
-                  <h1 className="text-white py-1 p-1">10:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-gray-700">
-                  <h1 className="text-white py-1 p-1">10:50</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:00</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-kuning">
-                  <h1 className="text-black py-1 p-1">11:50</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2">
-                  <h1 className="text-black py-1 p-1"></h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 bg-white">
-                  <h1 className="text-black py-1 p-1">11:40</h1>
-                </div>
-                <div className="rounded-full py-1 p-2 ">
-                  <h1 className="text-black py-1 p-1"></h1>
+            <div className="flex p-2 justify-center">
+              <div className=" py-4 p-5 w-auto rounded-lg bg-ungu">
+                <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
+                  <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
+                    <div className="flex justify-center">
+                      <h1 className="font-bold text-black">3</h1>
+                    </div>
+                    <div className="flex justify-center">
+                      <p className="text-black">Rabu</p>
+                    </div>
+                  </div>
+                  <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
+                    <div className="flex justify-center">
+                      <h1 className="font-bold text-black">4</h1>
+                    </div>
+                    <div className="flex justify-center">
+                      <p className="text-black">Kamis</p>
+                    </div>
+                  </div>
+                  <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
+                    <div className="flex justify-center">
+                      <h1 className="font-bold text-black">5</h1>
+                    </div>
+                    <div className="flex justify-center">
+                      <p className="text-black">Jumat</p>
+                    </div>
+                  </div>
+                  <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
+                    <div className="flex justify-center">
+                      <h1 className="font-bold text-black">6</h1>
+                    </div>
+                    <div className="flex justify-center">
+                      <p className="text-black">Sabtu</p>
+                    </div>
+                  </div>
+                  <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
+                    <div className="flex justify-center">
+                      <h1 className="font-bold text-black">7</h1>
+                    </div>
+                    <div className="flex justify-center">
+                      <p className="text-black">Minggu</p>
+                    </div>
+                  </div>
+                  <div className="rounded-lg py-2 p-2 bg-kuning flex flex-col">
+                    <div className="flex justify-center">
+                      <h1 className="font-bold text-black">8</h1>
+                    </div>
+                    <div className="flex justify-center">
+                      <p className="text-black">Senin</p>
+                    </div>
+                  </div>
+                  <div className="rounded-lg py-2 p-2 bg-white flex flex-col">
+                    <div className="flex justify-center">
+                      <h1 className="font-bold text-black">9</h1>
+                    </div>
+                    <div className="flex justify-center">
+                      <p className="text-black">Selasa</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex p-2 justify-center">
-            <button
-              onClick={() => {
-                setSelectedResume(true);
-              }}
-              className="flex justify-between py-4 px-60 text-2xl w-auto gap-5 rounded-lg text-white bg-ungu"
-            >
-              Konfirmasi
-            </button>
-          </div>
-          <div className="flex justify-center pr-72">
-            <p className="text-red-500">
-              * Waktu booking tidak dapat melebihi 7 hari
-            </p>
-          </div>
-          <div className="flex p-2 pr-80 ltr justify-center">
-            <div className="py-4 pe-20 w-auto gap-5 rounded-lg text-white bg-ungu">
-              <div className="justify-start">
-                <div className="flex p-2 ">
-                  <Image width={25} height={25} src="/img/white.jpg" alt="" />
-                  <p>: Tersedia</p>
+            <div className="flex p-1 justify-center">
+              <div className="flex  justify-between p-5 w-full gap-5 rounded-lg bg-ungu">
+                <div className="grid grid-cols-4 lg:grid-cols-6  gap-x-8 gap-y-4">
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8 text-center bg-gray-700">
+                    <h1 className="text-white flex items-center justify-center w-full  text-base">10:00</h1>
+                  </div>
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8 bg-gray-700">
+                    <h1 className="text-white flex items-center justify-center w-full text-base">10:10</h1>
+                  </div>
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8 bg-gray-700">
+                    <h1 className="text-white flex items-center justify-center w-full text-base">10:20</h1>
+                  </div>
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8 bg-gray-700">
+                    <h1 className="text-white flex items-center justify-center w-full text-base">10:30</h1>
+                  </div>
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8 bg-gray-700">
+                    <h1 className="text-white flex items-center justify-center w-full text-base">10:40</h1>
+                  </div>
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8 bg-gray-700">
+                    <h1 className="text-white flex items-center justify-center w-full text-base">10:50</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:00</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-kuning">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:50</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8">
+                    <h1 className="text-black flex items-center justify-center w-full text-base"></h1>
+                  </div>
+                  <div className="rounded-full w-20  h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full w-20 h-8 sm:flex bg-white">
+                    <h1 className="text-black flex items-center justify-center w-full text-base">11:40</h1>
+                  </div>
+                  <div className="rounded-full hidden space-x-8 sm:flex w-20 h-8  ">
+                    <h1 className="text-black flex items-center justify-center w-full text-base"></h1>
+                  </div>
                 </div>
-                <div className="flex p-2 ">
-                  <Image width={25} height={25} src="/img/yellow.png" alt="" />
-                  <p>: Dipilih</p>
-                </div>
-                <div className="flex p-2 ">
-                  <Image width={25} height={25} src="/img/black.png" alt="" />
-                  <p>: Tidak dapat dipilih</p>
+              </div>
+            </div>
+            <div className="flex p-2 justify-center">
+              <button
+                onClick={() => {
+                  setSelectedResume(true);
+                }}
+                className="flex justify-center py-3 p-3 w-full text-2xl rounded-lg text-white bg-ungu"
+              >
+                Konfirmasi
+              </button>
+            </div>
+            <div className="flex">
+              <p className="text-red-500 flex text-sm">
+                * Waktu booking tidak dapat melebihi 7 hari
+              </p>
+            </div>
+            <div className="flex p-2 ltr">
+              <div className="py-4 pe-20 w-auto gap-1 rounded-lg text-white bg-ungu">
+                <div className="justify-start">
+                  <div className="flex p-1 ">
+                    <Image width={25} height={25} src="/img/white.jpg" alt="" />
+                    <p>: Tersedia</p>
+                  </div>
+                  <div className="flex p-1 ">
+                    <Image
+                      width={25}
+                      height={25}
+                      src="/img/yellow.png"
+                      alt=""
+                    />
+                    <p>: Dipilih</p>
+                  </div>
+                  <div className="flex p-1 ">
+                    <Image width={25} height={25} src="/img/black.png" alt="" />
+                    <p>: Tidak dapat dipilih</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -551,13 +562,13 @@ export default function Kota() {
       ) : null}
       {selectResume == true ? (
         <div>
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
             <div className="mb-10">
               <Image width={620} height={600} src="/img/wakwaw.png" alt="" />
             </div>
-            <div className="bg-ungu rounded-lg py-2 mb-20 p-2 md:w-1/2">
+            <div className="bg-ungu rounded-lg  mb-20 p-2">
               <div className="flex justify-center">
-                <h1 className="flex flex-col space-y-1 title-font p-1 text-2xl mb-4 font-normal text-tertiary">
+                <h1 className="flex flex-col space-y-1 title-font p-1 text-2xl text-tertiary">
                   Detail Pesanan
                   <span className="inline-block h-1 w-44 rounded bg-tertiary mt-1 mb-4"></span>
                 </h1>
@@ -587,7 +598,7 @@ export default function Kota() {
                   <input
                     type="kode"
                     name="kode"
-                    className="mt-1 px-3 py-2 bg-ungu border-2 border-tertiary shadow-sm placeholder-white  block w-96 rounded-full sm:text-sm"
+                    className="mt-1 px-3 py-2 bg-ungu border-2 border-tertiary shadow-sm placeholder-white  block w-60 rounded-full sm:text-sm"
                     placeholder="Masukkan Kode Promo"
                   />
                 </label>
@@ -639,7 +650,7 @@ export default function Kota() {
               </div>
               <div className="flex mt-6 justify-center">
                 <button className="flex bg-tertiary border-0 py-2 px-8 focus:outline-none hover:bg-tertiary text-primary rounded-full text-lg">
-                Lanjutkan Pembayaran
+                  Lanjutkan Pembayaran
                 </button>
               </div>
             </div>
