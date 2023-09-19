@@ -9,10 +9,10 @@ export default function Tampilan() {
         <div className=" h-auto">
           <Image width={1440} height={666} src="/img/awalan.png" alt="" />
         </div>
-        <div className="flex justify-center ">
+        <div className="fixed bottom-5 z-10 right-14 left-14">
           <Link href={"/potrait"}>
-            <button className="flex mx-auto mt-1 text-white bg-ungu border-0 italic py-2 px-8 focus:outline-none rounded-full text-lg">
-              Booking Now
+            <button className="flex mx-auto text-white bg-ungu border-0 italic py-1 px-5 focus:outline-none rounded-full text-lg">
+              Booking Sekarang
             </button>
           </Link>
         </div>

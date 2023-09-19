@@ -50,7 +50,7 @@ export default function Login() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-100 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-100 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   placeholder="Phone Number"
                 />
               </div>
@@ -62,7 +62,7 @@ export default function Login() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-100 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-100 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   placeholder="Password"
                 />
               </div>
@@ -70,12 +70,12 @@ export default function Login() {
             <div className="flex justify-center">
               <h1 className="text-white">Belum memiliki akun?</h1>
               <Link href={"/register"}>
-              <button className="text-yellow-500">Register</button>
+              <button className="text-ning">Register</button>
               </Link>
             </div>
             <div className="p-2 w-full">
               <Link href={"/sukseslogin"}>
-              <button className="flex mx-auto text-white bg-purple-600 border-0 py-2 px-8 focus:outline-none hover:bg-purple-700 rounded-lg text-lg">
+              <button className="flex mx-auto text-white bg-ungu border-0 py-2 px-8 focus:outline-none hover:bg-purple-900 rounded-lg text-lg">
                 Login
               </button>
               </Link>

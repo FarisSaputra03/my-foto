@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { AiOutlineArrowDown } from "react-icons/ai";
 export default function Potrait() {
+  const [selectedFoto, setSelectedFoto] = useState<boolean>(false);
   return (
     <section className="text-gray-600 body-font bg-white">
       <div className="p-8">
@@ -85,58 +88,66 @@ export default function Potrait() {
             </p>
           </div>
         </div>
-        <div className="flex gap-10 justify-center">
-          <div>
-            <Link href={"/galery"}>
-              <button className="mt-10 w-auto text-ungu bg-white border-2 border-ungu py-2 px-5 rounded-full text-sm">
-                Lihat Galeri Photo
-              </button>
-            </Link>
-          </div>
+        <div className="flex justify-center">
           <div>
             <Link href={"/kota"}>
-              <button className="mt-10 w-auto text-white bg-ungu border-2 py-2 px-5 hover:bg-purple-900 rounded-full text-sm">
+              <button className="w-auto text-white bg-ungu border-2 py-2 px-8 hover:bg-purple-900 rounded-full text-xl">
                 Pesan Online
               </button>
             </Link>
           </div>
         </div>
-      </div>
-      <div>
-        <div className="p-8 flex justify-evenly">
+        <div className="flex justify-center">
           <div>
-            <Image width={300} height={300} src="/img/couplelg.png" alt="" />
-          </div>
-          <div>
-            <Image width={300} height={300} src="/img/familylg.png" alt="" />
-          </div>
-          <div>
-            <Image width={300} height={300} src="/img/siswa.png" alt="" />
-          </div>
-        </div>
-        <div className="p-8 flex justify-evenly">
-          <div>
-            <Image width={300} height={300} src="/img/wakwaw.png" alt="" />
-          </div>
-          <div>
-            <Image width={300} height={300} src="/img/2.png" alt="" />
-          </div>
-          <div>
-            <Image width={300} height={300} src="/img/biglg.png" alt="" />
-          </div>
-        </div>
-        <div className="p-8 flex justify-evenly">
-          <div>
-            <Image width={300} height={300} src="/img/selfi.png" alt="" />
-          </div>
-          <div>
-            <Image width={300} height={300} src="/img/wle.png" alt="" />
-          </div>
-          <div>
-            <Image width={300} height={300} src="/img/4boxlg.png" alt="" />
+            <button
+            onClick={() => {
+              setSelectedFoto(!selectedFoto);
+            }}
+            className="w-auto flex gap-1 text-ungu bg-white border-2 border-ungu py-2 px-5 rounded-full text-">
+              Lihat Galeri Photo <AiOutlineArrowDown size={20} />
+            </button>
           </div>
         </div>
       </div>
+
+      {selectedFoto !== false ?
+        <div>
+          <div className="p-8 flex justify-evenly">
+            <div>
+              <Image width={300} height={300} src="/img/couplelg.png" alt="" />
+            </div>
+            <div>
+              <Image width={300} height={300} src="/img/familylg.png" alt="" />
+            </div>
+            <div>
+              <Image width={300} height={300} src="/img/siswa.png" alt="" />
+            </div>
+          </div>
+          <div className="p-8 flex justify-evenly">
+            <div>
+              <Image width={300} height={300} src="/img/wakwaw.png" alt="" />
+            </div>
+            <div>
+              <Image width={300} height={300} src="/img/2.png" alt="" />
+            </div>
+            <div>
+              <Image width={300} height={300} src="/img/biglg.png" alt="" />
+            </div>
+          </div>
+          <div className="p-8 flex justify-evenly">
+            <div>
+              <Image width={300} height={300} src="/img/selfi.png" alt="" />
+            </div>
+            <div>
+              <Image width={300} height={300} src="/img/wle.png" alt="" />
+            </div>
+            <div>
+              <Image width={300} height={300} src="/img/4boxlg.png" alt="" />
+            </div>
+          </div>
+        </div>
+        : null
+      }
     </section>
   );
 }

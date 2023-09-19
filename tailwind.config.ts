@@ -16,6 +16,7 @@ const config: Config = {
       tertiary: "#FDE356 ",
       kuning: "#FDE356",
       merah: "#FF0000",
+      ning: "#F9E555",
     },
     extend: {
       backgroundImage: {
